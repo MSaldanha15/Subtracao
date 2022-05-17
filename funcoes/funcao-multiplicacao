@@ -1,0 +1,4 @@
+const Multiplicacao = async(...Numero) => {
+    return Numero.reduce((Resultado , ValorAtual)=> Resultado * ValorAtual)}
+
+module.exports = Multiplicacao;

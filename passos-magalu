@@ -1,0 +1,26 @@
+#Language = PT-BR
+
+Funcionalidade: Simulação de uma compra
+    Autentificação de login
+
+Esquema de cenario: Acessar o site da Magazine Luiza
+Quando escolher produto
+E clico no icone Sacola
+Então escolho se quero uma proteção
+Quando clico no botão continuar
+E vejo todos os itens que selecionei para comprar
+Então Preencho o campo <CEP> 
+Quando clico no botão continuar, sou redirecionado a tela de Cadastro do Usuario
+E preencho os campos com <Email> ou <CPF>
+E preencho o campo da senha com <Senha>
+Então sou redirecionado a tela referente ao tipo de frete
+Quando seleciono o tipo de entrega
+E clico em Continuar
+Então preencho os dados <Cartão>
+Quando seleciono continuar
+Então vejo um resumo de tudo que foi selecionado
+E confirmo a compra 
+
+Exemplos:
+Cep      | Email          | CPF            | Cartão
+21740200 |teste@gmail.com | 123.456.789-89 | 123456789
